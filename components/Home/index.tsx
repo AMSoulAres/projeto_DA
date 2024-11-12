@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
-import HomeButton from "./components/HomeButton";
+import { BaseButton } from "../BaseButton";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 export default function Home() {
@@ -42,23 +42,23 @@ export default function Home() {
             }
           </Text>
         <View style={{ alignSelf: "center", marginBottom: 44}}>
-          <HomeButton
+          <BaseButton
             onPress={onPressAjudar}
             title="ADOTAR"
             style={styles.button}
           />
-          <HomeButton
+          <BaseButton
             onPress={onPressAjudar}
             title="AJUDAR"
             style={styles.button}
           />
-          <HomeButton
+          <BaseButton
             onPress={onPressAjudar}
             title="CADASTRAR ANIMAL"
             style={styles.button}
           />
         </View>
-      <Text style={{alignSelf: 'center', color: '#88C9BF', fontFamily: 'Roboto', fontSize: 16}}>
+      <Text onPress={onPressAjudar} style={{alignSelf: 'center', color: '#88C9BF', fontFamily: 'Roboto', fontSize: 16}}>
         login
       </Text>
       </View>

@@ -1,9 +1,10 @@
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import 'react-native-reanimated';
 
 import Home from '@/components/Home';
+import Login from '@/components/Login';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { View } from 'react-native';
 
@@ -30,8 +31,8 @@ export default function RootLayout() {
   return (
     <>
     <View style={{backgroundColor: "#fafafa"}}>
-
-      <Home/>
+      {/* <Home/> */}
+      <Login/>
     </View>
     </>
   );
